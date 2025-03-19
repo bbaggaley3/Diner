@@ -1,0 +1,179 @@
+/* Prevent adjustments of font size after orientation changes.  */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  height: 100%;
+}
+
+/*---- apply a natural box layout model to all elements -------*/
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  font-family: $defaultFont;
+  font-weight: $normalWeight;
+  color: $fontColor;
+}
+// Begin with Header
+#headerWrapper {
+  background-color: $primaryColor;
+  color: white;
+}
+
+header {
+  display: flex;
+  align-items: flex-end;
+  padding: 1rem $gutter;
+  gap: 8px;
+  h1 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: $normalWeight;
+  }
+}
+
+//Begin with Nav
+#navWrapper {
+  background-color: $primaryColor;
+}
+
+#navigationButton::before {
+  content: "\2630";
+}
+
+#navigationButton {
+  border: none;
+  background: none;
+  color: white;
+  font-size: 2rem;
+  padding: 0;
+  width: 44px;
+  height: 44px;
+  font-weight: $lightWeight;
+  cursor: pointer;
+}
+
+ul.menuLinks {
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
+ display: none;
+
+ li a {
+   padding: 0.8rem $gutter;
+   color: #fff;
+   text-decoration: none;
+    display: block;
+ }
+
+  li.active a {
+  background-color: rgba(255,255,255,0.2)
+  }
+}
+
+ul.open.menuLinks {
+  display: block;
+}
+
+#navigationButton.open::before {
+  content: "x";
+}
+//end of Nav stuff 
+main {
+  padding: 0 $gutter;
+}
+.allCards {
+  padding: 0 $gutter;
+
+  section {
+    border: 1px solid $secondaryColor;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 1rem 0;
+
+    h2, p, img {
+      margin: 0;
+      padding: 1rem $gutter;
+    }
+
+      h2 {
+        background-color: $secondaryColor;
+        font-size: 1.5rem;
+        color: white;
+        text-align: center;
+      }
+      img {
+        width: 100%;
+        height: auto;
+        padding: 0;
+      }
+      p {
+        font-style: italic;
+      }
+      a {
+        display: block;
+        background-color: $accentColor;
+        padding: .75rem;
+        text-align: center;
+        color: black;
+        text-decoration: none;
+        margin: 0 5rem 1rem 5rem;
+        border-radius: 8px;
+      }
+}
+}
+
+// begin the the footer
+#footerWrapper {
+    background-color: $primaryColor;
+    color: white;
+}
+
+footer {
+    padding: 0.5rem $gutter;
+    section.contact {
+      p{
+        font-size: 1.2rem;
+        margin: .5rem;
+
+        a {
+          color: white;
+        }
+      }
+      ion-icon {
+        color: white;
+        padding-right: 5px;
+      }
+    } //end of contact
+    section.social {
+      display: flex;
+      justify-content: center;
+
+      a {
+        display: block;
+        font-size: 2rem;
+        margin: .5rem;
+        padding: .5rem;
+        color: White;
+        &:hover {
+          transform: translateY(10px);
+          color: $accentColor;
+        }
+      }
+    } //end of social
+    section.location {
+      font-size: 1.5rem;
+    } //End of Location
+
+    p.legal {    
+      color: white;
+      margin: 0;
+      font-weight: $lightWeight;
+      text-align: center;
+  }
+}

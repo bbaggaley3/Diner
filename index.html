@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Diner</title>
+    <meta name="description" content="Diner Website">
+    <meta name="author" content="Brooke Whitehead">
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@300,400,600&display=swap" rel="stylesheet">
+    <link href="css/styles.min.css" rel="stylesheet">
+
+    
+</head>
+<body>
+    <div id="headerWrapper">
+        <header >
+            <img src="images/logo.png" alt="logo" height="40" width="40"> 
+            <h1>My Diner</h1>
+        </header>
+    </div>
+
+    <div id="navWrapper">
+        <nav>
+            <button id="navigationButton"></button>
+            <ul class="menuLinks">
+                <li><a href="#">Catering</a></li>
+                <li class="active"><a href="#">Menu</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="mainWrapper">
+        <main>
+            <h1>Favorite Dishes</h1>
+            <div class="allCards">
+                <section>
+                    <img src="images/pasta.webp" alt="pasta" width="300" height="250">
+                    <h2>Pasta</h2>
+                    <p>Try our delicious pasta dishes</p>
+                    <a href="#">Learn More</a>
+                </section>
+                <section> 
+                    <img src="images/chicken.webp" alt="Chicken Tenders" width="300" height="250">
+                    <h2>Chicken Dishes</h2>
+                    <p>Try our delicious chicken dishes</p>
+                    <a href="#">Learn More</a>
+                </section>
+                <section>
+                    <img src="images/pancake.webp" alt="breakfast" width="300" height="250">
+                    <h2>Breakfast</h2>
+                    <p>Try our delicious breakfast dishes</p>
+                    <a href="#">Learn More</a>
+                </section>
+                <section>
+                    <img src="images/pizza.webp" alt="Pizza" width="300" height="250">
+                    <h2>Pizza</h2>
+                    <p>Try our delicious pizzas</p>
+                    <a href="#">Learn More</a>
+                </section>
+                <section>
+                    <img src="images/pudding.webp" alt="Pudding" width="300" height="250">
+                    <h2>Desserts</h2>
+                    <p>Try our delicious desserts</p>
+                    <a href="#">Learn More</a>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <div id="footerWrapper">
+        <footer >
+            <div>
+                <section class="contact">
+                    <p><ion-icon name="person-outline"></ion-icon> Contact Us</p>
+                    <p><ion-icon name="mail-outline"></ion-icon><a href="mailto:diner@example.mail">diner@example.mail</a></p>
+                    <p><ion-icon name="globe-outline"></ion-icon><a href="https://diner.com">diner.com</a></p>
+                    <p><ion-icon name="call-outline"></ion-icon><a href="tel:5555555555">(555)555-5555</a></p>
+                </section>
+                <section class="social">
+                    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+                </section>
+                <section class="location">
+                    <address>555 Example St. 
+                        <br>Orem, UT 
+                        <br>84043
+                    </address>
+                </section>
+            </div>
+            <p class="legal">&copy; <span id="year">x</span> &bull; Brooke Whitehead</p>
+        </footer>
+    </div>
+
+    <script src="js/scripts.js"></script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+</body>
+</html>
